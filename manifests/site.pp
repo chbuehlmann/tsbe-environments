@@ -33,7 +33,7 @@ node default {
 	pveproxy_service_enabled   => true,
 
 	# Manage additionnals modules
-	pve_modules_list           => [ 'iptable_filter', 'iptable_mangle', 'iptable_nat', 'ipt_length', 'ipt_limit', 'ipt_LOG', 'ipt_MASQUERADE', 'ipt_multiport', 'ipt_owner', 'ipt_recent', 'ipt_REDIRECT', 'ipt_REJECT', 'ipt_state', 'ipt_TCPMSS', 'ipt_tcpmss', 'ipt_TOS', 'ipt_tos', 'ip_conntrack', 'ip_nat_ftp', 'xt_iprange', 'xt_comment', 'ip6table_filter', 'ip6table_mangle', 'ip6t_REJECT' ],
+	pve_modules_list           => [ '' ],
 	pve_modules_file_path      => '/etc/modules-load.d/proxmox.conf',
 	pve_modules_file_content   => 'proxmox4/hypervisor/proxmox_modules.conf.erb',
 
