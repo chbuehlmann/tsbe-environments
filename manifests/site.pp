@@ -17,7 +17,7 @@ node default {
 	rec_pkg_name               => [ 'bridge-utils', 'lvm2', 'ntp', 'postfix', 'ssh' ],
 
 	# Old useless packages
-	old_pkg_ensure             => 'absent'
+	old_pkg_ensure             => 'absent',
 	old_pkg_name               => [ 'acpid',  'linux-image-amd64', 'linux-base', 'linux-image-3.16.0-4-amd64' ],
 
 	# Manage PVE Enterprise repository (need a subscription)
