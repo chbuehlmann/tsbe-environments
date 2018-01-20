@@ -26,7 +26,6 @@ node default {
 	# Pveproxy access restriction
 	pveproxy_default_path      = '/etc/default/pveproxy'
 	pveproxy_default_content   = 'proxmox4/hypervisor/pveproxy_default.erb'
-	pveproxy_allow             = '127.0.0.1'
 	pveproxy_deny              = 'all'
 	pveproxy_policy            = 'allow'
 	pveproxy_service_name      = 'pveproxy'
@@ -45,9 +44,6 @@ node default {
 
 	# Firewall
 	labs_firewall_rule         = false
-	
-	
-	
   }
 
 }
