@@ -1,4 +1,4 @@
-node "pve_node" { 
+node default { 
 
   include nano
 
