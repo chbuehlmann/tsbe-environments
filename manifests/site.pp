@@ -11,7 +11,7 @@ node default {
 	ve_pkg_name                => [ 'proxmox-ve', 'ksm-control-daemon', 'open-iscsi', 'pve-firmware' ],
 
 	# PVE Kernel
-	kernel_pkg_name            => [ 'pve-kernel-4.4.35-2-pve' ],
+	kernel_pkg_name            => [ 'pve-kernel-4.13.13-5-pve' ],
 
 	# Recommended packages
 	rec_pkg_name               => [ 'bridge-utils', 'lvm2', 'ntp', 'postfix', 'ssh' ],
