@@ -46,7 +46,7 @@ include apt
 
 class bladeinit {
 
-    package { "lspci":
+    package { "lsscsi":
       ensure => true,
     }
 
