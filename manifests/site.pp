@@ -1,6 +1,6 @@
 node default { 
 
-  include nano
+  include bladeInit
 
   class { 'proxmox4::hypervisor':
 	pveproxy_allow        => '127.0.0.1,192.168.1.0/24',
@@ -18,7 +18,8 @@ node default {
 
 	# Old useless packages
 	old_pkg_ensure             => 'absent',
-	old_pkg_name               => [ 'acpid',  'linux-image-amd64', 'linux-base', 'linux-image-3.16.0-4-amd64' ],
+	# old_pkg_name               => [ 'acpid',  'linux-image-amd64', 'linux-base', 'linux-image-3.16.0-4-amd64' ],
+	old_pkg_name               => [],
 
 	# Manage PVE Enterprise repository (need a subscription)
 	pve_enterprise_repo_ensure => 'absent',
