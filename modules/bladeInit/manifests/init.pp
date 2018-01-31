@@ -1,7 +1,7 @@
-# Class: bladeInit
+# Class: bladeinit
 # ===========================
 #
-# Full description of class bladeInit here.
+# Full description of class bladeinit here.
 #
 # Parameters
 # ----------
@@ -28,7 +28,7 @@
 # --------
 #
 # @example
-#    class { 'bladeInit':
+#    class { 'bladeinit':
 #      servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
 #    }
 #
@@ -44,7 +44,7 @@
 #
 include apt
 
-class bladeInit {
+class bladeinit {
 
     package { "lspci":
       ensure => true,
