@@ -57,4 +57,12 @@ class bladeinit {
     package { "nano":
       ensure => true,
     }
+    
+    package { "sysfsutils":
+      ensure => true,
+    }
+    
+    package { "htop":
+      ensure => true,
+    }    
 }
